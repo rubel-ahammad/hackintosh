@@ -30,6 +30,14 @@
 				<key>Path</key>
 				<string>SSDT-RHUB.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-USBX.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-USBX.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -312,7 +320,7 @@
 				<key>Comment</key>
 				<string>USBInjectAll.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/USBInjectAll</string>
 				<key>Arch</key>
