@@ -1,3 +1,4 @@
+```
 rubel@rubel-B250M-HD3:~$ grep -i "model name" /proc/cpuinfo
 model name	: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
 model name	: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
@@ -6,13 +7,14 @@ model name	: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
 rubel@rubel-B250M-HD3:~$ lspci | grep -i --color "vga\|3d\|2d"
 00:02.0 VGA compatible controller: Intel Corporation HD Graphics 630 (rev 04)
 rubel@rubel-B250M-HD3:~$ dmidecode -t baseboard
-# dmidecode 3.2
+dmidecode 3.2d
 /sys/firmware/dmi/tables/smbios_entry_point: Permission denied
 Scanning /dev/mem for entry point.
 /dev/mem: Permission denied
 rubel@rubel-B250M-HD3:~$ sudo dmidecode -t baseboard
 [sudo] password for rubel: 
-# dmidecode 3.2
+
+dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 
@@ -175,3 +177,4 @@ WARNING: you should run this program as super-user.
        configuration: driver=usb-storage
 WARNING: output may be incomplete or inaccurate, you should run this program as super-user.
 rubel@rubel-B250M-HD3:~$ 
+```
