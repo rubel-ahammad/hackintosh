@@ -1,17 +1,17 @@
 ```
-rubel@rubel-B250M-HD3:~$ grep -i "model name" /proc/cpuinfo
+B250M-HD3:~$ grep -i "model name" /proc/cpuinfo
 model name	: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
 model name	: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
 model name	: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
 model name	: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
-rubel@rubel-B250M-HD3:~$ lspci | grep -i --color "vga\|3d\|2d"
+B250M-HD3:~$ lspci | grep -i --color "vga\|3d\|2d"
 00:02.0 VGA compatible controller: Intel Corporation HD Graphics 630 (rev 04)
-rubel@rubel-B250M-HD3:~$ dmidecode -t baseboard
+B250M-HD3:~$ dmidecode -t baseboard
 dmidecode 3.2d
 /sys/firmware/dmi/tables/smbios_entry_point: Permission denied
 Scanning /dev/mem for entry point.
 /dev/mem: Permission denied
-rubel@rubel-B250M-HD3:~$ sudo dmidecode -t baseboard
+B250M-HD3:~$ sudo dmidecode -t baseboard
 [sudo] password for rubel: 
 
 dmidecode 3.2
@@ -63,7 +63,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:1c.2
 
-rubel@rubel-B250M-HD3:~$ aplay -l
+B250M-HD3:~$ aplay -l
 **** List of PLAYBACK Hardware Devices ****
 card 0: PCH [HDA Intel PCH], device 0: ALC887-VD Analog [ALC887-VD Analog]
   Subdevices: 1/1
@@ -86,8 +86,8 @@ card 0: PCH [HDA Intel PCH], device 9: HDMI 3 [HDMI 3]
 card 0: PCH [HDA Intel PCH], device 10: HDMI 4 [HDMI 4]
   Subdevices: 1/1
   Subdevice #0: subdevice #0
-rubel@rubel-B250M-HD3:~$ lspci | grep -i network
-rubel@rubel-B250M-HD3:~$ lshw -class network
+B250M-HD3:~$ lspci | grep -i network
+B250M-HD3:~$ lshw -class network
 WARNING: you should run this program as super-user.
   *-network                 
        description: Ethernet interface
@@ -113,7 +113,7 @@ WARNING: you should run this program as super-user.
        capabilities: ethernet physical wireless
        configuration: broadcast=yes driver=rtl8192cu driverversion=5.13.0-30-generic firmware=N/A ip=192.168.0.101 link=yes multicast=yes wireless=IEEE 802.11
 WARNING: output may be incomplete or inaccurate, you should run this program as super-user.
-rubel@rubel-B250M-HD3:~$ lshw -class disk -class storage
+B250M-HD3:~$ lshw -class disk -class storage
 WARNING: you should run this program as super-user.
   *-sata                    
        description: SATA controller
@@ -176,5 +176,5 @@ WARNING: you should run this program as super-user.
        capabilities: scsi-host
        configuration: driver=usb-storage
 WARNING: output may be incomplete or inaccurate, you should run this program as super-user.
-rubel@rubel-B250M-HD3:~$ 
+B250M-HD3:~$ 
 ```
