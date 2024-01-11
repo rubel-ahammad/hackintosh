@@ -1,5 +1,6 @@
 **/.DS_Store
-/.idea
+**/._.DS_Store
+**/._*
 **/._.contentVisibility
 **/EFI/OC/Drivers/._.DS_Store
 **/EFI/OC/Kexts/._.DS_Store
